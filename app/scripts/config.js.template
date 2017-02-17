@@ -1,0 +1,17 @@
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name app.service:Config
+ * @description
+ * # Config
+ * Controller of the app
+ */
+angular.module('app')
+.factory('Config', function () {
+  return {
+    uploadUrl: '',
+    uploadUsername: '',
+    uploadPassword: ''
+  };
+});

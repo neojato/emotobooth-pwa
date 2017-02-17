@@ -1,0 +1,18 @@
+<div class="card cardTemplate gcp-emotobooth">
+  <!--<div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" name="photo_1" type="file" capture="camera" accept="image/*" aria-label="Select a File" onchange="angular.element(this).scope().uploadFile(this.files)" />
+  </div>-->
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="file" id="photo" ng-model="main.photo" accept="image/*" image="main.photo" resize-max-height="1000" resize-max-width="1000" resize-quality="0.7" resize-type="image/png" aria-label="Select a File" />
+  </div>
+  <img ng-src="{{ main.photo.compressed.dataURL }}" style="padding-top: 10px;width: 40%;height: auto;" />
+  <!--<div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" name="photo_3" type="file" capture="camera" accept="image/*" onchange="angular.element(this).scope().uploadFile(this.files)">
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" name="photo_4" type="file" capture="camera" accept="image/*" onchange="angular.element(this).scope().uploadFile(this.files)">
+  </div>-->
+  <!--<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="uploadFile()">
+    Submit
+  </button>-->
+</div>
